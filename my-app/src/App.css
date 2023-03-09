@@ -1,0 +1,269 @@
+.animal_div{
+  
+  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+ 
+
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
+
+}
+.navbar{
+  background-color:#D63585;;
+
+  color:black;
+}
+.animal_details{
+  
+  width: 350px;
+  height: 130px;
+  color: white;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-around;
+  /* font-family: "Poppins"; */
+  /* font-family: 'Pumpkin Story', sans-serif; */
+                                                
+
+
+
+}
+p{
+  font-family: "Poppins";
+}
+h3{
+  font-family: 'Baloo Bhai';font-size: 20px;
+  font-weight: 200;
+}
+.animal_img img{
+  width: 120px;
+  position: relative;
+  left: -50px;
+}
+.math_img{
+  background-color:#243c54;
+  height: 50vh;
+}
+.math_link{
+  border: 2px solid #fff876;
+  border-radius: 18px;
+  color: #fff876;
+  font-size: 14.6px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 1px 10px 3px;
+  text-decoration: none;
+ 
+  position: relative;
+  top: 180px;
+  margin: 20px;
+  left: -170px;
+}
+
+.main_parentdiv{
+  background: url('https://www.coolmath4kids.com/themes/custom/coolmath4kids/images/homepage_mathgames_title.png');
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 9999;
+  background-color:#FD9493;
+
+}
+li{
+  list-style-type: none;
+}
+.detail-animal-style{
+  display: flex;
+
+}
+.animal_big_img{
+  width: 80%;
+}
+.animal_all_details p{
+  line-height: 30px;
+}
+.animal_all_details{
+  justify-content: center;
+  align-items: center;
+}
+/* footer css */
+.main {
+	max-height: 550px;;
+	background-color: #292c2f;
+	color: white;
+	font-size: 38pt;
+	text-align: center;
+	line-height: 550px;
+}
+footer{
+	position: relative;
+
+}
+.footer-distributed{
+	background-color: #D63585;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #b0ff11;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #132a3e;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:   #252d4a;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #b0ff11;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #132a3e;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #252d4a;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
+}

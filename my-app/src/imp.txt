@@ -1,0 +1,34 @@
+ <div className='container mt-3' >
+     <h1 className='text-center'>Add to Cart product</h1>
+     <div className='row d-flex justify-content-center align-items-center '>
+
+      {
+       data.map((element,id)=>{
+        return(
+
+         <>
+         <Card className="card_style" style={{ width: '20rem', margin:20 , border:"none" }}  >
+      <Card.Img variant="top" src={element.animal_img} style={{height:"16rem"}} />
+      <Card.Body>
+        <Card.Title>{element.animal_name}</Card.Title>
+       
+      
+      </Card.Body>
+    </Card>
+         
+         
+         
+         </>
+        )
+       })
+      }
+     
+     </div>
+     
+    </div>
+
+
+
+
+
+   /* */
