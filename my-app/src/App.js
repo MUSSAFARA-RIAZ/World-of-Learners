@@ -9,7 +9,7 @@ import AlphabetQuiz from './Components/AlphabetQuiz';
 import AnimalsQuiz from './Components/AnimalsQuiz';
 import MathsQuiz from './Components/MathsQuiz';
 
-import Quiz from './Quiz';
+
 
  import {Routes,Route} from "react-router-dom";
 import Footer from './Components/Footer';

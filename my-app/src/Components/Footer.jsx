@@ -5,55 +5,55 @@ import '../App.css';
 export default function Footer() {
   return (
     <div>
-     <div class="main"> </div>
-		<footer class="footer-distributed">
+     <div className="main"> </div>
+		<footer className="footer-distributed">
  
-			<div class="footer-left">
+			<div className="footer-left">
  
 				<h3>WorldOf<span>Learners</span></h3>
  
-				<p class="footer-links">
+				<p className="footer-links">
 					<a href="#">Cool Maths</a>
 					·
 					<a href="#">Animals</a>
 					·
 				</p>
  
-				<p class="footer-company-name">WorldOfLearners &copy; 2022</p>
+				<p className="footer-company-name">WorldOfLearners &copy; 2022</p>
 			</div>
  
-			<div class="footer-center">
+			<div className="footer-center">
  
 				<div>
-					<i class="fa fa-map-marker"></i>
+					<i className="fa fa-map-marker"></i>
 					<p><span>NED University</span> Karachi, Pakistan</p>
 				</div>
  
 				<div>
-					<i class="fa fa-phone"></i>
+					<i className="fa fa-phone"></i>
 					<p>+92 334 121582</p>
 				</div>
  
 				<div>
-					<i class="fa fa-envelope"></i>
+					<i className="fa fa-envelope"></i>
 					<p><a href="mailto:support@company.com">contact@WorldOfLearners.com</a></p>
 				</div>
  
 			</div>
  
-			<div class="footer-right">
+			<div className="footer-right">
  
-				<p class="footer-company-about">
-					<span>About the product</span>
+				<p className="footer-company-about">
+					<span className='about_application'>About application</span>
 					Web of Learners is an application for kids to learns about differet animals &amp; polish the mental math skills through interactive quizzes.
 				</p>
  
-				<div class="footer-icons">
+				<div className="footer-icons">
  
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#"><i className="fa fa-facebook"></i></a>
+					<a href="#"><i className="fa fa-twitter"></i></a>
+					<a href="#"><i className="fa fa-linkedin"></i></a>
+					<a href="#"><i className="fa fa-github"></i></a>
  
 				</div>
  

@@ -109,7 +109,20 @@ color:"#0d6efd"
   speed:" Speed 49 – 65 km/h ",
   color:"#e77406"
 
- }
+ },
+ {
+  id:9,
+  animal_img:"./Images/c_bluebird.png",
+  animal_name:"Blue Bird",
+
+  animal_shorttext:"Hi i am blue bird",
+  description: "Bluebirds are loved by gardeners for their insect control ",
+  paragraph: "A bluebird is usually perceived as a symbol of joy and happiness that are expecting you in the future. If this bird has appeared in your life, it will remind you of all the beauty of the nature around you.",
+
+lifespan:" 6-10 years",
+speed:" Speed Speed40-50km/hr.",
+color:"#0d6efd"
+ },
 
 ]
 export default AnimalData;
