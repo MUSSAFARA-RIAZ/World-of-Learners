@@ -6,27 +6,24 @@ function Slider() {
     <Carousel>
       <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100" style={{height:"70vh"}}
-          src="./Images/sliderimg2.jpeg"
+          className="d-block w-100" style={{height:"60vh"}}
+          src="./Images/WOLimg1.jpg"
+         
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3 style={{color:"black", fontSize:50}}>
-            Welcome to world of learners</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+      
       </Carousel.Item>
       <Carousel.Item interval={500}>
         <img
-          className="d-block w-100"  style={{height:"70vh"}}
-          src="./Images/sliderimg.jpeg"
+          className="d-block w-100"  style={{height:"60vh"}}
+          src="./Images/WOLimg2.jpg"
           alt="Second slide"
         />
        
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"  style={{height:"70vh"}}
+          className="d-block w-100"  style={{height:"60vh"}}
           src="./Images/sliderimg3.jpeg"
           alt="Third slide"
         />
@@ -35,5 +32,7 @@ function Slider() {
     </Carousel>
   );
 }
+
+
 
 export default Slider;

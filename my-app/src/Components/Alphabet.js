@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./Alphabet.css";
+import '../App.css'
 import a from "../assets/a.png";
 import b from "../assets/b.png";
 import c from "../assets/c.png";
@@ -197,8 +197,8 @@ const Alphabet = () => {
     <div className="game">
       <img src={game} alt="" />
       <h2>Kids Games: For Toddlers</h2>
-      <button>Play Now!</button>
-    </div>
+      <button>Click on Alphabet!! </button>
+    </div>        
     <div className="mains">
       <div data-aos="fade-right" className="alpha" onClick={start1}>
         <img src={a} alt="" />

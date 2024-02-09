@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
 import {ADD} from '../redux/action/action';
 import { useDispatch } from 'react-redux';
+
 import Slider from './Slider';
 
 //import { NavLink } from 'react-router-dom';
@@ -20,10 +21,12 @@ export default function Cards() {
   const start = () => {
     audio.play()
   }
- 
+  const images=['./Images/WOLimg1.jpg','./Images/WOLimg2.jpg']
+
+
   return (
     <>
-    <Slider/>
+     <Slider />
     <div className="animal_div" onClick={start}>
   {
     data.map((element, id) => {
