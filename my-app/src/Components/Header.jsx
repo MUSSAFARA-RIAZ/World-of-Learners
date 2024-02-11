@@ -25,6 +25,7 @@ function Header() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
+              {/* <NavLink style={{ textDecoration: "none", color: "white", padding: "20px" }} to="/game">Game</NavLink> */}
               <NavLink style={{ textDecoration: "none", color: "white", padding: "20px" }} to="/">Animals</NavLink>
               <NavLink style={{ textDecoration: "none", color: "white", padding: "20px" }} to="/coolmath">Cool_Maths</NavLink>
               <NavLink to='/alphabets' style={{ textDecoration: "none", color: "white", padding: "20px" }}>Alphabet</NavLink>

@@ -1,70 +1,65 @@
-import React from 'react'
-import { useState } from 'react'
-import Header from './Header';
-import MathData from './MathData'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import React, { useState } from 'react';
+// Import the CSS file
 
-export default function Math() {
- const [MathDatas,setMathdata]=useState(MathData);
+const Math = () => {
+  // Array of jumbled words and their correct answers
+  const words = [
+    { jumbled: 'DLO', answer: 'OLD' },
+    { jumbled: 'GDO', answer: 'DOG' },
+    { jumbled: 'RABIT', answer: 'RABBIT' },
+    { jumbled: 'OLW', answer: 'OWL' },
+    { jumbled: 'DHOC', answer: 'DOLPHIN' },
+  ];
+
+  // State to track current word index and user input
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [userInput, setUserInput] = useState('');
+  const [isCorrect, setIsCorrect] = useState(false);
+
+  // Function to handle user input change
+  const handleInputChange = (e) => {
+    setUserInput(e.target.value.toUpperCase());
+  };
+
+  // Function to check if user input matches the correct answer
+  const checkAnswer = () => {
+    if (userInput === words[currentIndex].answer) {
+      setIsCorrect(true);
+    } else {
+      setIsCorrect(false);
+    }
+  };
+
+  // Function to proceed to the next word
+  const nextWord = () => {
+    setUserInput('');
+    setIsCorrect(false);
+    setCurrentIndex(currentIndex + 1);
+  };
+
   return (
-   <>
-   
-    <div className='math_portion'>
-     <div className="math_img">
-      <img  style={{position:"relative" , left:50, top:100}}  src="./Images/welcome_image.png" alt="" />
-      <img style={{position:"relative" , left:300, top:100}} src="./Images/cm.png" alt="" />
-      <a href="/math-games" className='math_link' data-drupal-link-system-path="math-games">Math Games</a>
-          
-      <a href="/quizzes" title="" className='math_link' data-drupal-link-system-path="node/129">Quizzes</a>
-            
-            <a href="/manipulatives" className='math_link' data-drupal-link-system-path="manipulatives">Manipulatives</a>
-                
-            <a href="/brain-teasers" className='math_link' data-drupal-link-system-path="brain-teasers">Brain Teasers</a>
-                  
-            <a href="/more" className='math_link' data-drupal-link-system-path="more">More</a>
-    
-   
-            
+    <div className="container">
+      {currentIndex < words.length ? (
+        <div>
+          <h2  style={{color:'red'}} className="word">Unscramble the word: {words[currentIndex].jumbled}</h2>
+          <input
+          style={{color:'red'}}
+            className="input"
+            type="text"
+            value={userInput}
+            onChange={handleInputChange}
+            placeholder="Your guess"
+          />
+          <button className="button" style={{color:'black', backgroundColor:"#b0ff11", border:"2px solid black", marginBottom:"20px"}} onClick={checkAnswer}>Check</button>
+          {isCorrect && <p style={{color:'black', backgroundColor:"palevioletred"}}>Correct!</p>}
+          {!isCorrect && userInput !== '' && <p style={{color:'red'}}>Incorrect. Try again!</p>}
+          <button className="button" style={{color:'black', backgroundColor:"#b0ff11", border:"2px solid black", marginBottom:"20px"}} onClick={nextWord}>Next</button>
+        </div>
+      ) : (
+        <h2 style={{color:'red'}}>Congratulations! You've unscrambled all the words!</h2>
+      )}
     </div>
-<div className="main_parentdiv">
-  <div className="container mt-5">
-  <div className='row d-flex justify-content-center align-items-center mt-5 '>
+  );
+};
 
-    
-      {
-       MathDatas.map((element,id)=>{
-        return(
-         <>
-           <Card style={{ width: '21rem' , border:"none" , margin:20 }}>
-        <Card.Img variant="top" src={element.game_img} style={{height:"16rem", margin:"0"}} />
-        <Card.Body>
-          <Card.Title>{element.game_name}</Card.Title>
-          <Card.Text style={{color:"#2C366B"}}>
-             make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary" style={{backgroundColor:"#2C366B", color:"white"}} className='col-lg-12' >Play</Button>
-        </Card.Body>
-      </Card>
-         </>
-
-        )
-      
-
-       })
-      }
-      
-   
-     </div>
-     </div>
-     </div>
-     
-
-
-      
-    </div>
-    
-    </>
-  )
-}
+export default Math;

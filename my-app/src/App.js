@@ -13,6 +13,7 @@ import MathsQuiz from './Components/MathsQuiz';
 
  import {Routes,Route} from "react-router-dom";
 import Footer from './Components/Footer';
+import Game from './Components/Game';
 
 
 function App() {
@@ -25,9 +26,11 @@ function App() {
     
     <Routes>
     <Route path='/' element={<Animal/>}></Route>
+   
     <Route path="/animaldetails" element={<Animal_details/>}></Route>
     <Route path='/coolmath' element={<Math/>}></Route>
     <Route path='/alphabets'  element={<Alphabet/>}></Route>
+   
    
     <Route path="/alphabetquiz" element={<AlphabetQuiz/>}></Route>
     <Route path="/animalquiz" element={<AnimalsQuiz />}></Route>
