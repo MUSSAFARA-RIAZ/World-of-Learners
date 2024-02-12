@@ -34,9 +34,9 @@ export default function Cards() {
         <div className="animal_card" key={id}>
           <div className="animal_details" style={{ backgroundColor: element.color }}>
             <div className="animal_img" onClick={() => send(element)}>
-              <NavLink to={`/animaldetails`}>
+              
                 <img src={element.animal_img} alt="" />
-              </NavLink>
+             
             </div>
             <div className="animal_desc">
               <h3>{element.animal_name}</h3>

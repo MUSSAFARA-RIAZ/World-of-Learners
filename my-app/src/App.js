@@ -2,7 +2,7 @@ import './App.css';
 import Animal from './Components/Animal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
-import Animal_details from './Components/Animal_details';
+
 import Math from './Components/Math';
 import Alphabet from './Components/Alphabet';
 import AlphabetQuiz from './Components/AlphabetQuiz';
@@ -27,7 +27,7 @@ function App() {
     <Routes>
     <Route path='/' element={<Animal/>}></Route>
    
-    <Route path="/animaldetails" element={<Animal_details/>}></Route>
+    
     <Route path='/coolmath' element={<Math/>}></Route>
     <Route path='/alphabets'  element={<Alphabet/>}></Route>
    
