@@ -108,29 +108,8 @@ body {
 li {
   list-style-type: none;
 }
-/* .detail-animal-style{
-  display: flex;
 
-}
-.animal_big_img{
-  width: 80%;
-}
-.animal_all_details p{
-  line-height: 30px;
-}
-.animal_all_details{
-  justify-content: center;
-  align-items: center;
-} */
-/* footer css */
-.main {
-  max-height: 550px;
-  background-color: #292c2f;
-  color: white;
-  font-size: 38pt;
-  text-align: center;
-  line-height: 550px;
-}
+
 footer {
   position: relative;
   bottom: 0;
@@ -273,7 +252,7 @@ footer {
   margin-bottom: 5px;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1100px) {
   .footer-distributed {
     font: bold 14px sans-serif;
   }
@@ -356,29 +335,7 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.game img{
-    width: 8rem;
-    height: 8rem;
-    margin-top: -3rem;
-}
-.game button{
-    width: 10rem;
-    height: 3rem;
-    background-color: #f61f1f;
-    font-size: 1rem;
-    color: white;
-    border-radius: 5rem;
-    margin-top: -4rem;
-    margin-left: 2rem;
-    cursor: pointer;
-    animation: shake 2s linear infinite;
-    box-shadow: 0 0 60px 3px rgb(47, 89, 255), 0 0 50px 6px #f61f1f, 0 0 40px 9px #ff00d4;
-}
-.game h2{
-    margin-top: -3rem;
-    font-size: 2rem;
-    color:  rgb(58, 3, 129);
-}
+
 .header {
 	position: fixed;
 	width: 100%;

@@ -13,7 +13,7 @@ import MathsQuiz from './Components/MathsQuiz';
 
  import {Routes,Route} from "react-router-dom";
 import Footer from './Components/Footer';
-import Game from './Components/Game';
+
 
 
 function App() {
